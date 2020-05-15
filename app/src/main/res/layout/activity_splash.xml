@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <ImageView
+        android:layout_width="378px"
+        android:layout_height="246px"
+        android:layout_above="@id/appName"
+        android:id="@+id/appIcon"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/app_logo"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Corona Updates"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        android:fontFamily="sans-serif-medium"
+        android:id="@+id/appName"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Live Corona Statistics"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/appName"
+        android:fontFamily="sans-serif"></TextView>
+
+
+</RelativeLayout>

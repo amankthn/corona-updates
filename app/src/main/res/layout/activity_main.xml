@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        app:titleTextColor="#000000"
+        app:title="@string/app_name"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+        <ImageView
+            android:layout_width="68dp"
+            android:layout_height="55dp"
+            android:paddingBottom="6dp"
+            android:src="@drawable/app_logo"
+            android:paddingTop="2dp"
+            android:paddingLeft="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Corona Updates"
+            android:paddingLeft="3dp"
+            android:textSize="25dp"
+            android:fontFamily="cursive"
+            android:textStyle="bold"
+            android:paddingTop="11dp"
+            android:layout_margin="0dp"></TextView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!--    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
+    <!--        xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--        android:id="@+id/swiperefresh"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+    <!--    <ScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/my_toolbar"
+        android:name="com.ndapps.coronaupdates.fragments.MainFragment"
+        android:id="@+id/mainfragment">
+
+    </fragment>
+    <!--    </ScrollView>-->
+    <!--    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+
+
+</RelativeLayout>
